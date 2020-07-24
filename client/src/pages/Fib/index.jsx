@@ -22,7 +22,7 @@ export default () => {
   }
 
   const renderSeenIndexes = () => {
-    return seenIndexes.map(({number}) => number).join(', ');
+    return seenIndexes.map(({ number }) => number).join(', ');
   }
 
   const renderValues = () => {
@@ -49,12 +49,13 @@ export default () => {
 
   return (
     <div>
+      <h1>Fib Calculator</h1>
       <form onSubmit={handleSubmit}>
         <label>
           Enter your index:
         </label>
-        <input 
-          value={index} 
+        <input
+          value={index}
           onChange={(event) => setIndex(event.target.value)}
         />
         <button>Submit</button>
